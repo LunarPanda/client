@@ -1,0 +1,9 @@
+---
+applications:
+- name: client
+  memory: 512M
+  instances: 1
+  host: client
+  path: build/libs/client-0.0.1-SNAPSHOT.war
+  env:
+    SPRING_PROFILES_DEFAULT: cloud
