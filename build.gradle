@@ -10,7 +10,7 @@ buildscript {
 	}
 }
 
-apply plugin: 'java'
+apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
@@ -30,6 +30,7 @@ dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-eureka')
 	compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile group: 'ca.pjer', name: 'chatter-bot-api', version: '1.4.2'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
