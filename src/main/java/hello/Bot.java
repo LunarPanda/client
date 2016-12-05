@@ -25,7 +25,7 @@ public class Bot {
 		ChatterBotFactory factory = new ChatterBotFactory();
         ChatterBot bot=null;
 		try {
-			bot = factory.create(ChatterBotType.CLEVERBOT);
+			bot = factory.create(ChatterBotType.PANDORABOTS, "b0dafd24ee35a477");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
