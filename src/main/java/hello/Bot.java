@@ -20,11 +20,12 @@ public class Bot {
 	@Value("${spring.application.name}")
 	private String appName;
 	
+	
 	public Bot(){
 		ChatterBotFactory factory = new ChatterBotFactory();
         ChatterBot bot=null;
 		try {
-			bot = factory.create(ChatterBotType.PANDORABOTS, "b0dafd24ee35a477");
+			bot = factory.create(ChatterBotType.CLEVERBOT);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
