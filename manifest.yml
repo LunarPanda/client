@@ -2,16 +2,16 @@
 applications:
 - name: bot1
   memory: 512M
+  disk_quota: 384M
   instances: 1
   host: bot1
   path: build/libs/client-0.0.1-SNAPSHOT.war
   env:
     SPRING_PROFILES_ACTIVE: cloud
     
----
-applications:
 - name: bot2
   memory: 512M
+  disk_quota: 384M
   instances: 1
   host: bot2
   path: build/libs/client-0.0.1-SNAPSHOT.war
